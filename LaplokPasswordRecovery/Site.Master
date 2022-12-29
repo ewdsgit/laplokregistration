@@ -39,7 +39,8 @@
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="~/assets/css/theme.css">
     <link rel="stylesheet" media="screen" href="~/assets/css/sb2theme.css">
-
+     <link rel="stylesheet" media="screen" href="~/assets/css/sb-admin-2.css">
+  
 </head>
 <body>
     <form runat="server">

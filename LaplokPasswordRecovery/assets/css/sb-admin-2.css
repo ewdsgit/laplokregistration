@@ -2941,6 +2941,14 @@ fieldset:disabled a.btn {
   border-radius: 0.2rem;
 }
 
+.btn-xs, .btn-group-xs > .btn {
+    padding: 0.15rem 0.25rem;
+    font-size: 0.675rem;
+    line-height: 1.5;
+    border-radius: 0.1rem;
+}
+
+
 .btn-block {
   display: block;
   width: 100%;
@@ -9079,6 +9087,27 @@ button.bg-dark:focus {
   .my-lg-n5 {
     margin-top: -3rem !important;
   }
+
+    .mt-lg-n6 {
+        margin-top: -3.25rem !important;
+    }
+
+    .mt-lg-n7 {
+        margin-top: -3.5rem !important;
+    }
+
+    .mt-lg-n8 {
+        margin-top: -4rem !important;
+    }
+
+    .mt-lg-n9 {
+        margin-top: -4.5rem !important;
+    }
+
+    .mt-lg-n10 {
+        margin-top: -6rem !important;
+    }
+
   .mr-lg-n5,
   .mx-lg-n5 {
     margin-right: -3rem !important;
@@ -9091,6 +9120,8 @@ button.bg-dark:focus {
   .mx-lg-n5 {
     margin-left: -3rem !important;
   }
+
+
   .m-lg-auto {
     margin: auto !important;
   }

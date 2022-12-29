@@ -379,3 +379,7 @@
     .avatar.bg-primary i {
         font-size: 14px;
     }
+
+.bl-gradient {
+    background: linear-gradient(274deg, rgba(0,21,36,1) 0%, rgba(32,57,85,1) 46%, rgba(8,81,153,1) 100%);
+}
