@@ -66,7 +66,7 @@
                             <div class="position-relative mb-4">
                                 <label for="serialNo" class="form-label fs-base">Serial Number</label>
                                 <button type="button" class="btn btn-xs bg-transparent rounded-circle fs-6 border-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="hover" title="Serial Number"
-                                    data-bs-html="true" data-bs-content=' <img src="assets/img/pro-4.jpg" width="350" alt="Taplok" class="zindex-2 position-relative"/>'>
+                                    data-bs-html="true" data-bs-content=' <img src="assets/img/popover.jpg" width="350" alt="Taplok" class="zindex-2 position-relative"/>'>
                                     <i class='bx bxs-help-circle'></i>
                                 </button>
                                 <input type="text" id="serialNo" class="form-control form-control-lg fs-6" placeholder="Enter Serial Number" required>
