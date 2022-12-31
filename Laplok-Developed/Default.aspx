@@ -26,7 +26,7 @@
                 <div id="account-menu" class="list-group list-group-flush collapse d-md-block">
                      <a href="/welcome" class="list-group-item list-group-item-action d-flex align-items-center ">
                     <i class="bx bxs-shield fs-xl opacity-60 me-2"></i>
-                    Welcome
+                    Dashboard
                   </a>
                   <a href="/" class="list-group-item list-group-item-action d-flex align-items-center active">
                     <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
@@ -40,7 +40,7 @@
                     <i class="bx bx-collection fs-xl opacity-60 me-2"></i>
                     Serial Number
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                  <a href="/signin" class="list-group-item list-group-item-action d-flex align-items-center">
                     <i class="bx bx-log-out fs-xl opacity-60 me-2"></i>
                     Sign Out
                   </a>
@@ -51,7 +51,7 @@
 
 
           <!-- Account details -->
-          <div class="col-md-8 pb-5 mb-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0">
+            <div class="col-md-8 offset-lg-1 pb-5 mb-lg-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0">
               
            <div class="bg-gradient-primary border border-light rounded-3 py-2 px-2 px-sm-0">
                   <div class="row justify-content-center py-sm-2 py-lg-5">
@@ -88,7 +88,7 @@ for securing your information.</p>
                     <div class="invalid-feedback">Please provide a valid email address!</div>
                   </div>
                   <div class="col-sm-6 mb-4">
-                    <label for="phone" class="form-label fs-base">Phone <small class="text-muted">(optional)</small></label>
+                    <label for="phone" class="form-label fs-base">Phone</label>
                     <input type="text" id="phone" class="form-control form-control-lg" data-format='{"numericOnly": true, "delimiters": ["+1 ", " ", " "], "blocks": [0, 3, 3, 2]}' placeholder="+1 ___ ___ __">
                   </div>
                

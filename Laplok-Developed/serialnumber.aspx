@@ -26,7 +26,7 @@
                 <div id="account-menu" class="list-group list-group-flush collapse d-md-block">
                      <a href="/welcome" class="list-group-item list-group-item-action d-flex align-items-center ">
                     <i class="bx bxs-shield fs-xl opacity-60 me-2"></i>
-                    Welcome
+                   Dashboard
                   </a>
                   <a href="/" class="list-group-item list-group-item-action d-flex align-items-center ">
                     <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
@@ -40,7 +40,7 @@
                     <i class="bx bx-collection fs-xl opacity-60 me-2"></i>
                     Serial Number
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                  <a href="/signin" class="list-group-item list-group-item-action d-flex align-items-center">
                     <i class="bx bx-log-out fs-xl opacity-60 me-2"></i>
                     Sign Out
                   </a>
@@ -51,7 +51,7 @@
 
 
           <!-- Account details -->
-          <div class="col-md-8 pb-5 mb-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0">
+           <div class="col-md-8 offset-lg-1 pb-5 mb-lg-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0">
               
             <div class="row">
               <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
@@ -61,7 +61,7 @@
               </div>
               <div class="col-md-6">
                 <h2 class="h3 mb-sm-4">Serial Number</h2>
-                <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">Congue sit nulla velit ornare cras. Facilisis tempus non erat ornare imperdiet. In ac ullamcorper proin urna, lacus, tortor, ullamcorper egestas mattis mauris.</p>
+                <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">If you wish to change your Custom Unlock Code, Change it below and hit Update. (Note: Minimum 3 Digits required)</p>
              
                 <form class="needs-validation border-bottom pb-3 pb-lg-4" novalidate>
                   <div class="row pb-2">
@@ -71,16 +71,31 @@
                       <input type="text" id="serial" class="form-control form-control-lg" data-format='{"numericOnly": true, "delimiters": ["+1 ", " ", " "], "blocks": [0, 3, 3, 2]}' placeholder="___ ___ __">
                     </div>
                  
+                       <div class=" mb-4">
+                      <label for="serial" class="form-label fs-base">Custom Unlock Code <small class="text-muted"> Unlock code defined by the user</small></label>
+                      <div class="password-toggle">
+                      <input type="password" id="np" class="form-control form-control-lg" placeholder="Unlock Code" required>
+                      <label class="password-toggle-btn" aria-label="Show/hide password">
+                        <input class="password-toggle-check" type="checkbox">
+                        <span class="password-toggle-indicator"></span>
+                      </label>
+                    </div>
+                           
+                       
+                       </div>
                   </div>
                   </form>
-
-                <div class="d-flex flex-column flex-sm-row">
-                  <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Submit</a>
+              <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-2">If you want us to email or text your Unlock Code please click on Get Code</p>
+              
+                            <div class="d-flex flex-column flex-sm-row ">
+                  <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Update</a>
                   <a href="#" class="btn btn-outline-primary">
-                    Learn more
+                    Get Code
                     <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
                   </a>
                 </div>
+                  
+           
               </div>
             </div>
 

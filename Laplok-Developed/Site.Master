@@ -117,7 +117,7 @@
       </a>
       <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
         <li>
-          <a href="#" class="dropdown-item d-flex align-items-center">
+          <a href="/" class="dropdown-item d-flex align-items-center">
             <i class="bx bx-user fs-base opacity-60 me-2"></i>
                 Profile
             <span class="bg-success rounded-circle mt-n2 ms-1" style="width: 5px; height: 5px;"></span>
@@ -127,7 +127,7 @@
       
         <li class="dropdown-divider"></li>
         <li>
-          <a class="dropdown-item d-flex align-items-center" href="#">
+          <a class="dropdown-item d-flex align-items-center" href="/signin">
             <i class="bx bx-log-out fs-base opacity-60 me-2"></i>
             Sign out
           </a>

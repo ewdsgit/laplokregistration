@@ -4223,6 +4223,8 @@
     <Content Include="libman.json" />
     <Content Include="security.aspx" />
     <Content Include="serialnumber.aspx" />
+    <Content Include="signin.aspx" />
+    <Content Include="signup.aspx" />
     <Content Include="welcome.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -4319,6 +4321,20 @@
     </Compile>
     <Compile Include="serialnumber.aspx.designer.cs">
       <DependentUpon>serialnumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
