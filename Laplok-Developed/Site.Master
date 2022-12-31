@@ -1,0 +1,304 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Laplok_Developed.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+    <title>Laplok</title>
+
+     <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="~/assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="~/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="~/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Laplok " />
+    <meta property="og:type" content="Security" />
+    <meta property="og:description" content="Real-world protection when the world is your office. LapLok is a new pocket-sized security guard designed to keep your devices secure anytime, anyplace." />
+    <%--<meta property="og:image" content="assets/img/tooth.jpg" />--%>
+    <meta property="og:image" content="https://laplok.com/assets/img/tooth.jpg" />
+
+     <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="~/assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="~/assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="~/assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="~/assets/css/theme.css">
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+     
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-1 px-lg-4 px-md-3 px-xl-4">
+          <a href="/" class="navbar-brand pe-1">
+            <img src="/assets/img/logo/logo-light.png" width="150" alt="Taplok">
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="/whylaplok" class="nav-link fw-bolder">Why LapLok</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/howlaplokworks" class="nav-link fw-bolder">How LapLok Works</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/ourproduct" class="nav-link fw-bolder">Our Products</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/recordingandresetting" class="nav-link fw-bolder">Recording &amp; Resetting</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contact" class="nav-link fw-bolder">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="https://www.indiegogo.com/projects/laplok-secure-your-laptop-wherever-you-work#/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-cart fs-4 lh-1 me-sm-1 me-lg-2 me-xl-2 me-md-2"></i>
+                &nbsp;Buy now
+              </a>
+            </div>      
+          </div>
+      
+          <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav dropdown d-block order-lg-3 ms-4">
+      <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown">
+        <img src="assets/img/avatar/09.jpg" class="rounded-circle" width="48" alt="Avatar">
+        <div class="d-none d-sm-block ps-2">
+          <div class="fs-xs lh-1 opacity-60">Hello,</div>
+          <div class="fs-sm dropdown-toggle">Rener Flores</div>
+        </div>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
+        <li>
+          <a href="#" class="dropdown-item d-flex align-items-center">
+            <i class="bx bx-user fs-base opacity-60 me-2"></i>
+                Profile
+            <span class="bg-success rounded-circle mt-n2 ms-1" style="width: 5px; height: 5px;"></span>
+            <span class="ms-auto fs-xs text-muted">2</span>
+          </a>
+        </li>
+      
+        <li class="dropdown-divider"></li>
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="#">
+            <i class="bx bx-log-out fs-base opacity-60 me-2"></i>
+            Sign out
+          </a>
+        </li>
+      </ul>
+    </div>
+        </div>
+      </header>
+
+
+
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            </main>
+
+          <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5 " id="footer">
+
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4 ">
+              <img src="/assets/img/logo/logo-light.png" width="190" alt="">
+              OUR STORY
+            </div>
+            <p class="fs-sm pb-lg-3 mb-4">A modern world needs modern solutions. Techlok is the new way to secure your electronics and valuables to prevent grab-and-go theft. 
+                We are creating a world where theft is harder and safety is easier. </p>
+            <form class="needs-validation pe-sm-1" novalidate>
+               
+              
+
+
+                                                                  
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+
+                    <asp:TextBox ID="emailAddress" runat="server" CssClass="form-control rounded-start ps-5" placeholder="Your email" ClientIDMode="Static"></asp:TextBox>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-3 zindex-5"></i>
+                  <!--Validates the value of the textbox if empty-->  
+                  <asp:RequiredFieldValidator ID="SiteReqVal" ValidationGroup="SiteValidator" 
+                        runat="server"
+                        ErrorMessage="Please provide a valid email address!"
+                        CssClass="invalid-tooltip position-absolute top-100 start-0" 
+                        ControlToValidate="emailAddress" 
+                        SetFocusOnError="true" 
+                        Display="Dynamic" 
+                        ></asp:RequiredFieldValidator>
+                  <!--Validates the value of the textbox if the email address provided is valid-->
+                    <asp:RegularExpressionValidator ID="SiteRegVal" runat="server" 
+                        ErrorMessage="Please provide a valid email address!"  
+                        CssClass="invalid-tooltip position-absolute top-100 start-0" 
+                        ControlToValidate="emailAddress"
+                        SetFocusOnError="true" 
+                        Display="Dynamic" 
+                        ValidationExpression="^\S+@\S+$" ValidationGroup="SiteValidator"> </asp:RegularExpressionValidator>
+
+                  <asp:Button ID="subsBtn" 
+                      runat="server" 
+                      Text="Subscribe" 
+                      CssClass="btn btn-primary recapBtn g-recaptcha"
+                      type="button"
+                       OnClick="subscribeBtn_Click"
+                      UseSubmitBehavior="false" 
+                       OnClientClick="disableButton('emailAddress', 'subsBtn');"
+                      ValidationGroup="SiteValidator"
+                      data-sitekey="6LcqS0AjAAAAAO064-CfrQmT_oEnrEBT8Ue6DwWA"
+                      data-callback="onSubmit"
+                      data-action="submit" />
+               
+                       
+              </div>
+              <div class="col-9">
+                    <asp:Panel ID="AlertSuccessSite" runat="server" CssClass=" text-primary pb-2 pt-2 mt-1" role="alert" Visible="false"><i class='bx bx-check fs-lg'>Thank you for subscribing!</i></asp:Panel>
+                </div>
+            </form>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">About Us</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="/about" class="nav-link d-inline-block px-0 pt-1 pb-2">About Us</a></li>
+                    <li class="nav-item"><a href="/faq" class="nav-link d-inline-block px-0 pt-1 pb-2">FAQs</a></li>
+                  </ul>
+             
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#other-info" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+                <div id="other-info" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="/terms-services" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms Of Use</a></li>
+                    <li class="nav-item"><a href="/privacy" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                    <li class="nav-item"><a href="/refund" class="nav-link d-inline-block px-0 pt-1 pb-2">Return and Refund Policy</a></li>
+                    <li class="nav-item"><a href="/donotsell" class="nav-link d-inline-block px-0 pt-1 pb-2">Do not sell my personal information</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <div class=" flex-column pt-md-1 pt-xl-0 align-self-lg-start">
+                     <ul class="nav flex-column mt-0 mb-lg-0 d-lg-block d-none">
+                        <li class="nav-item pt-1 pb-3 text-dark" style="font-weight:500;">Socials</li>
+                         </ul>
+
+                            <ul class="nav flex-row mb-2 mb-lg-0">
+                                
+                                 <li class="nav-item"><a class="btn btn-icon btn-secondary btn-facebook me-2 mb-2" href="https://www.facebook.com/TechlokSolutions"><i class="bx bxl-facebook"></i></a></li>
+                                 <li class="nav-item"><a class="btn btn-icon btn-secondary btn-twitter me-2" href="https://twitter.com/TechlokS"><i class="bx bxl-twitter"></i></a></li>
+                                 <li class="nav-item"><a class="btn btn-icon btn-secondary btn-instagram me-2" href="https://www.instagram.com/techlok_solutions/"> <i class="bx bxl-instagram"></i></a></li>
+                                 <li class="nav-item"><a class="btn btn-icon btn-secondary btn-linkedin me-2" href="https://www.linkedin.com/company/techlok-solutions/"><i class="bx bxl-linkedin"></i></a></li>
+                                 <li class="nav-item"> <a class="btn btn-icon btn-secondary btn-pinterest me-2" href="https://www.pinterest.com/Techlok_Solutions/" ><i class='bx bxl-pinterest' ></i></a></li>
+                                 <li class="nav-item"><a class="btn btn-icon btn-secondary btn-youtube me-2" href="https://www.youtube.com/channel/UCMeUf9Yfc6OL10tqxTdzhfA"><i class="bx bxl-youtube"></i></a></li>
+                            </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <asp:Panel ID="FootEnd" runat="server">
+          <asp:Label ID="Label1" runat="server" Text="Label" CssClass="nav d-block fs-sm text-center text-md-start pb-2 pb-lg-0 mb-0">&copy; LapLok 2022. All rights reserved</asp:Label>
+              </asp:Panel>
+      </div>
+    </footer>
+
+        <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+          
+
+             <!-- Vendor Scripts -->
+      
+
+         <asp:PlaceHolder runat="server">
+            <%: Scripts.Render("~/assets/js/jquery-2.1.4.js") %>
+            <%: Scripts.Render("~/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/parallax-js/dist/parallax.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/rellax/rellax.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/swiper/swiper-bundle.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/lightgallery/lightgallery.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/lightgallery/plugins/video/lg-video.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/jarallax/dist/jarallax.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/swiper/swiper-bundle.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js") %>
+            <%: Scripts.Render("~/assets/vendor/lightgallery/plugins/video/lg-video.min.js") %>
+            <%: Scripts.Render("~/assets/js/cookie-consent.js") %>
+            <%: Scripts.Render("~/assets/js/modernizr.js") %>
+           
+            <%: Scripts.Render("~/assets/js/theme.min.js") %>
+              <%: Scripts.Render("~/assets/js/customized_scripts.js") %>
+           <%-- <%: Scripts.Render("https://www.google.com/recaptcha/api.js") %>--%>
+         </asp:PlaceHolder>
+       
+    </form>
+   
+
+</body>
+
+</html>
